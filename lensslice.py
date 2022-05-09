@@ -35,7 +35,7 @@ pizza_and_prices.pop()
 
 # adding new topping, respecting proper sorting order:
 pizza_and_prices.insert(4, [2.5, "peppers"])
-print("\n" + "Someone just bought the last piece of the anchovies pizza, but no worries, we have added another one (italian purists especially love it):" + "\n" + "\n" + str(pizza_and_prices))
+print("\n" + "Someone just bought the last piece of the anchovies pizza, but no worries, we have added another, spicy, one:" + "\n" + "\n" + str(pizza_and_prices))
 
 # storing pizza slices for mice:
 three_cheapest = pizza_and_prices[0:3]
