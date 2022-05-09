@@ -16,8 +16,11 @@ num_pizzas = len(toppings)
 print()
 print("We sell " + str(num_pizzas) + " different kinds of pizza! Here they are, sorted by ascending price:" + "\n")
 
-# creating 2D list so we can sort them by price later on:
-pizza_and_prices = [[2, "pepperoni"],[6, "pineapple"], [1, "cheese"], [3, "sausage"], [2, "olives"], [7, "anchovies"], [2, "mushrooms"]]
+# using zip function to zip the content together::
+pizza_prices = zip(prices, toppings)
+
+# we gather the data stored in memory and turn it into a list, that we sort by ascending order of price:
+pizza_and_prices = list(pizza_prices)
 pizza_and_prices.sort()
 print(pizza_and_prices)
 
@@ -32,7 +35,7 @@ pizza_and_prices.pop()
 
 # adding new topping, respecting proper sorting order:
 pizza_and_prices.insert(4, [2.5, "peppers"])
-print("\n" + "Someone just bought the last piece of the cheese pizza, but no worries, we have added another one:" + "\n" + "\n" + str(pizza_and_prices))
+print("\n" + "Someone just bought the last piece of the anchovies pizza, but no worries, we have added another one (italian purists especially love it):" + "\n" + "\n" + str(pizza_and_prices))
 
 # storing pizza slices for mice:
 three_cheapest = pizza_and_prices[0:3]
