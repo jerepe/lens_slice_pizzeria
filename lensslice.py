@@ -14,7 +14,7 @@ num_pizzas = len(toppings)
 
 # advertise:
 print()
-print("We sell " + str(num_pizzas) + " different kinds of pizza! Here they are, sorted by ascending price:" + "\n")
+print("We sell " + str(num_pizzas) + " different kinds of pizza! Here they are, sorted by ascending price:\n")
 
 # using zip function to zip the content together::
 pizza_prices = zip(prices, toppings)
@@ -35,8 +35,8 @@ pizza_and_prices.pop()
 
 # adding new topping, respecting proper sorting order:
 pizza_and_prices.insert(4, [2.5, "peppers"])
-print("\n" + "Someone just bought the last piece of the anchovies pizza, but no worries, we have added another, spicy, one:" + "\n" + "\n" + str(pizza_and_prices))
+print("\nSomeone just bought the last piece of the anchovies pizza, but no worries, we have added another, spicy, one:\n\n" + str(pizza_and_prices))
 
 # storing pizza slices for mice:
 three_cheapest = pizza_and_prices[0:3]
-print("\n" + "Ahhhhhhh .... actually today we give the following ones  to a few mice sniffing around: " + "\n" + "\n" + str(three_cheapest) + "\n")
+print("\nAhhhhhhh .... actually today we give the following ones  to a few mice sniffing around: \n\n" + str(three_cheapest) + "\n")
